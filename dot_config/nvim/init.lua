@@ -23,6 +23,13 @@ vim.opt.whichwrap:append('<,>,h,l,[,]')
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+-- Copy to primary selection on mouse release
+vim.keymap.set('v', '<LeftRelease>', '"*ygv')
+vim.keymap.set('v', '<2-LeftRelease>', '"*ygv')
+vim.keymap.set('v', '<3-LeftRelease>', '"*ygv')
+
+-- Set shortcut to toggle nvim-tree file explorer
 vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>', { silent = true })
 
+-- Load lazy.nvim configuration
 require("config.lazy")
