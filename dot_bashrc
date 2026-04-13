@@ -125,6 +125,9 @@ if [[ -n $PS1 && -f ~/.bash_prompt ]]; then
   ps1_more_colorful_theme  # <-- Choose the theme here
 fi
 
+# Adding manually-installed neovim binary dir to path
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+
 # Alias for Game Controller binary. Should be in .bash_aliases but yeah
 alias gc=/home/tars/Downloads/game_controller-2025.1-x86_64-unknown-linux-gnu/game_controller
 
